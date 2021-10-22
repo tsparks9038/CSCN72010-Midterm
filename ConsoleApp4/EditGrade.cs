@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassLibrary1
+namespace ConsoleApp4
 {
     public class EditGrade
     {
@@ -12,7 +12,7 @@ namespace ClassLibrary1
         {
             studentArray[indexValue].grade = grade;
 
-            SortArray.Sort(studentArray);
+            SortArray.SortStub();
         }
 
         public static void UpdateGradeStub()

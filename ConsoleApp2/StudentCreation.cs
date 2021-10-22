@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassLibrary1
+namespace ConsoleApp2
 {
     public class StudentCreation
     {
         public static void CreateStudent(string firstName, string lastName, Student[] studentArray)
         {
-            string studentID = firstName[0] + lastName[0] + Rng.GenerateValue();
+            string studentID = firstName[0] + lastName[0] + Rng.GenerateValueStub();
             int freeSpot = Array.FindIndex(studentArray, i => i == null);
 
             Student s = new(firstName, lastName, studentID, 0);
